@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Rodrigues e Dantas Advocacia — Direito de Família, Imobiliário, do Consumidor, Civil e Contratual. Atendimento personalizado, presencial em Santa Helena de Goiás/GO e online para todo o Brasil.">
+<meta name="description" content="Rodrigues e Dantas Advocacia — Direito de Fam\u00edlia, Imobili\u00e1rio, do Consumidor, Civil e Contratual. Atendimento personalizado, presencial com hora marcada e online para todo o Brasil.">
 <link rel="canonical" href="https://rodriguesedantasadvogados.com.br/">
 <meta name="theme-color" content="#002e0d">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3Crect%20width='48'%20height='48'%20rx='11'%20fill='%23002e0d'/%3E%3Ctext%20x='24'%20y='31'%20font-family='Georgia,serif'%20font-size='19'%20fill='%23c6a15b'%20text-anchor='middle'%3ERD%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Rodrigues e Dantas Advocacia">
-<meta property="og:title" content="Rodrigues e Dantas Advocacia — Fam\u00edlia, Imobili\u00e1rio e mais">
+<meta property="og:title" content="Rodrigues e Dantas Advocacia">
 <meta property="og:description" content="Advocacia pr\u00f3xima e t\u00e9cnica: Fam\u00edlia, Imobili\u00e1rio, Consumidor, Civil e Contratual. Atendimento personalizado em todo o Brasil.">
 <meta property="og:url" content="https://rodriguesedantasadvogados.com.br/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Rodrigues e Dantas Advocacia">
 <meta name="twitter:description" content="Advocacia pr\u00f3xima e t\u00e9cnica em Fam\u00edlia, Imobili\u00e1rio, Consumidor, Civil e Contratual.">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LegalService","name":"Rodrigues e Dantas Advocacia","url":"https://rodriguesedantasadvogados.com.br/","areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Santa Helena de Goi\u00e1s","addressRegion":"GO","addressCountry":"BR"},"knowsAbout":["Direito de Fam\u00edlia","Direito Imobili\u00e1rio","Direito do Consumidor","Direito Civil","Direito Contratual"]}
+{"@context":"https://schema.org","@type":"LegalService","name":"Rodrigues e Dantas Advocacia","url":"https://rodriguesedantasadvogados.com.br/","areaServed":"BR","knowsAbout":["Direito de Fam\u00edlia","Direito Imobili\u00e1rio","Direito do Consumidor","Direito Civil","Direito Contratual"]}
 </script>
 <title>Rodrigues e Dantas Advocacia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,7 +117,8 @@
   /* ---------- HERO ---------- */
   .hero { background: var(--verde-escuro); position: relative; overflow: hidden; }
   .hero::before { content: ''; position: absolute; inset: 0; background-image: var(--pattern); pointer-events: none; }
-  .hero-in { max-width: var(--mw); margin: 0 auto; padding: 88px 24px 92px; position: relative; display: grid; grid-template-columns: 1.25fr .75fr; gap: 48px; align-items: center; }
+  .hero-in { max-width: var(--mw); margin: 0 auto; padding: 92px 24px 96px; position: relative; }
+  .hero-copy { max-width: 46rem; }
   .hero h1 { font-family: var(--ff-display); font-weight: 500; font-size: clamp(2.3rem, 5vw, 3.7rem); color: var(--creme); margin-bottom: 22px; }
   .hero h1 em { font-style: italic; color: var(--dourado); }
   .hero p.sub { font-size: 1.1rem; color: rgba(244,241,233,.76); max-width: 34rem; margin-bottom: 34px; }
@@ -250,21 +251,12 @@
 <header class="site">
   <nav class="nav" aria-label="Navegação principal">
     <a href="#inicio" class="brand" aria-label="Rodrigues e Dantas Advocacia — início">
-      <span class="emblem" aria-hidden="true">
-        <!-- Monograma RD (aproximação do símbolo oficial) -->
-        <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
-          <circle cx="24" cy="24" r="23" stroke="#c6a15b" stroke-width="1"/>
-          <path d="M17 15h6.5a6 6 0 0 1 0 12H17V15Zm0 12 8 6" stroke="#c6a15b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M26 15h3a9 9 0 0 1 0 18h-3V15Z" stroke="#c6a15b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </span>
       <span class="brand-txt"><span class="b1">Rodrigues e Dantas</span><span class="b2">Advocacia</span></span>
     </a>
     <ul class="nav-links">
       <li><a href="#sobre">O escritório</a></li>
       <li><a href="#areas">Áreas de atuação</a></li>
       <li><a href="#diferenciais">Diferenciais</a></li>
-      <li><a href="#equipe">Equipe</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
     <a class="btn btn-primary" data-wa data-msg="Olá! Gostaria de falar com um advogado do Rodrigues e Dantas." href="#contato" target="_blank" rel="noopener">
@@ -277,7 +269,6 @@
     <a href="#sobre" onclick="closeMenu()">O escritório</a>
     <a href="#areas" onclick="closeMenu()">Áreas de atuação</a>
     <a href="#diferenciais" onclick="closeMenu()">Diferenciais</a>
-    <a href="#equipe" onclick="closeMenu()">Equipe</a>
     <a href="#contato" onclick="closeMenu()">Contato</a>
     <a class="btn btn-primary" data-wa data-msg="Olá! Gostaria de falar com um advogado do Rodrigues e Dantas." href="#contato" target="_blank" rel="noopener" onclick="closeMenu()">Fale no WhatsApp</a>
   </div>
@@ -300,14 +291,6 @@
         <a class="btn btn-ghost" href="#areas">Ver áreas de atuação</a>
       </div>
       <p class="hero-meta"><span class="dot"></span> Atendimento personalizado <span class="dot"></span> Presencial e online</p>
-    </div>
-    <div class="hero-emblem" aria-hidden="true">
-      <div class="ring">
-        <svg width="150" height="150" viewBox="0 0 48 48" fill="none">
-          <path d="M17 14h7a6.5 6.5 0 0 1 0 13H17V14Zm0 13 9 7" stroke="#c6a15b" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M26 14h3.2a9.5 9.5 0 0 1 0 19H26V14Z" stroke="#c6a15b" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
     </div>
   </div>
 </section>
@@ -448,51 +431,8 @@
       <div class="dif-item fade">
         <div class="dif-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/><circle cx="12" cy="12" r="10"/></svg></div>
         <h3>Presencial e online</h3>
-        <p>Atendimento em Santa Helena de Goiás e, de forma online, para clientes de qualquer lugar.</p>
+        <p>Atendimento presencial com hora marcada e online, para clientes de qualquer lugar do Brasil.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================ EQUIPE ============================ -->
-<section id="equipe" class="section equipe">
-  <div class="container">
-    <div class="section-head fade">
-      <span class="eyebrow">Equipe</span>
-      <h2 class="title">Quem cuida do seu caso.</h2>
-      <p class="lead">Pessoas contratam pessoas. Conheça os sócios que conduzem o escritório.</p>
-    </div>
-    <div class="equipe-grid">
-      <article class="socio fade">
-        <div class="socio-foto">
-          <div class="ph"><!-- Trocar por <img src="assets/ana-laura.jpg" alt="Ana Laura Dantas"> -->
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <span>Foto — Ana Laura</span>
-          </div>
-        </div>
-        <div class="socio-info">
-          <p class="role">Sócia</p>
-          <h3>Ana Laura Dantas</h3>
-          <p class="spec">Direito de Família e Sucessões</p>
-          <p class="bio">Conduz cada família com técnica, escuta e cuidado, explicando cada etapa para que você sempre saiba onde está. <em>(Bio a completar.)</em></p>
-          <a class="btn btn-outline socio-cta" data-wa data-msg="Olá! Gostaria de falar com o escritório Rodrigues e Dantas." href="#contato" target="_blank" rel="noopener">Falar no WhatsApp</a>
-        </div>
-      </article>
-      <article class="socio fade">
-        <div class="socio-foto">
-          <div class="ph"><!-- Trocar por <img src="assets/saulo.jpg" alt="Saulo Rodrigues"> -->
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <span>Foto — Saulo</span>
-          </div>
-        </div>
-        <div class="socio-info">
-          <p class="role">Sócio</p>
-          <h3>Saulo Rodrigues</h3>
-          <p class="spec">Imobiliário, Civil e Contratual</p>
-          <p class="bio">Traz visão técnica e estratégica de operações de alta complexidade para a advocacia do dia a dia, traduzindo o juridiquês em decisões claras. <em>(Bio a completar.)</em></p>
-          <a class="btn btn-outline socio-cta" data-wa data-msg="Olá! Gostaria de falar com o escritório Rodrigues e Dantas." href="#contato" target="_blank" rel="noopener">Falar no WhatsApp</a>
-        </div>
-      </article>
     </div>
   </div>
 </section>
@@ -537,20 +477,12 @@
       <!-- Canais + mapa -->
       <div class="contato-side fade">
         <div class="info-row">
-          <span class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg></span>
-          <div><p class="k">Endereço</p><p class="v">Santa Helena de Goiás — GO<br><span style="opacity:.6;font-size:.82rem">(endereço completo a confirmar)</span></p></div>
-        </div>
-        <div class="info-row">
           <span class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4zM4 7l8 6 8-6"/></svg></span>
           <div><p class="k">E-mail</p><p class="v"><a href="mailto:contato@rodriguesedantasadvogados.com.br">contato@rodriguesedantasadvogados.com.br</a></p></div>
         </div>
         <div class="info-row">
           <span class="info-ico"><svg viewBox="0 0 24 24" fill="#25D366" stroke="none"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35Z"/></svg></span>
           <div><p class="k">WhatsApp</p><p class="v"><a data-wa data-msg="Olá! Gostaria de falar com um advogado do Rodrigues e Dantas." href="#" target="_blank" rel="noopener">Iniciar conversa no WhatsApp →</a></p></div>
-        </div>
-        <div class="map">
-          <div class="map-fallback"><span style="color:rgba(244,241,233,.6);font-size:.82rem">Mapa — Santa Helena de Goiás/GO</span><a href="https://www.google.com/maps/search/?api=1&query=Santa+Helena+de+Goi%C3%A1s+GO" target="_blank" rel="noopener">Abrir no Google Maps</a></div>
-          <iframe title="Mapa — Santa Helena de Goiás/GO" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Santa+Helena+de+Goi%C3%A1s+GO&output=embed"></iframe>
         </div>
       </div>
     </div>
@@ -564,16 +496,9 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="#inicio" class="brand" aria-label="Rodrigues e Dantas Advocacia">
-        <span class="emblem" aria-hidden="true">
-          <svg width="38" height="38" viewBox="0 0 48 48" fill="none">
-            <circle cx="24" cy="24" r="23" stroke="#c6a15b" stroke-width="1"/>
-            <path d="M17 15h6.5a6 6 0 0 1 0 12H17V15Zm0 12 8 6" stroke="#c6a15b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M26 15h3a9 9 0 0 1 0 18h-3V15Z" stroke="#c6a15b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
         <span class="brand-txt"><span class="b1">Rodrigues e Dantas</span><span class="b2">Advocacia</span></span>
       </a>
-      <p>Advocacia próxima e técnica em Direito de Família, Imobiliário, do Consumidor, Civil e Contratual. Atendimento presencial em Santa Helena de Goiás/GO e online para todo o Brasil.</p>
+      <p>Advocacia próxima e técnica em Direito de Família, Imobiliário, do Consumidor, Civil e Contratual. Atendimento personalizado, presencial com hora marcada e online para todo o Brasil.</p>
     </div>
     <div class="footer-col">
       <h4>Navegação</h4>
