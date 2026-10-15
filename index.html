@@ -157,6 +157,17 @@
   .area-cta { margin-top: auto; display: inline-flex; align-items: center; gap: 7px; font-size: .82rem; font-weight: 700; color: var(--terracota); transition: gap var(--tr); }
   .area-cta:hover { gap: 11px; }
 
+  /* ---------- IMOBILIÁRIO (detalhado) ---------- */
+  .imob { background: var(--off-white); }
+  .imob-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .imob-item { background: var(--wh); border: 1px solid rgba(0,46,13,.08); border-top: 3px solid var(--terracota); border-radius: var(--radius); padding: 24px 22px; transition: transform var(--tr), box-shadow var(--tr); }
+  .imob-item:hover { transform: translateY(-3px); box-shadow: 0 16px 36px -24px rgba(0,46,13,.35); }
+  .imob-item h3 { font-family: var(--ff-display); font-weight: 600; font-size: 1.1rem; color: var(--ink); margin-bottom: 7px; }
+  .imob-item p { font-size: .86rem; color: var(--texto); }
+  .imob-cta { margin-top: 36px; text-align: center; }
+  @media (max-width: 820px) { .imob-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .imob-grid { grid-template-columns: 1fr; } }
+
   /* ---------- DIFERENCIAIS ---------- */
   .dif { background: var(--verde-claro); position: relative; overflow: hidden; }
   .dif::before { content: ''; position: absolute; inset: 0; background-image: var(--pattern); pointer-events: none; }
@@ -258,6 +269,7 @@
     <ul class="nav-links">
       <li><a href="#sobre">O escritório</a></li>
       <li><a href="#areas">Áreas de atuação</a></li>
+      <li><a href="#imobiliario">Imobiliário</a></li>
       <li><a href="#diferenciais">Diferenciais</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
@@ -270,6 +282,7 @@
   <div class="mobile-menu" id="mobmenu">
     <a href="#sobre" onclick="closeMenu()">O escritório</a>
     <a href="#areas" onclick="closeMenu()">Áreas de atuação</a>
+    <a href="#imobiliario" onclick="closeMenu()">Imobiliário</a>
     <a href="#diferenciais" onclick="closeMenu()">Diferenciais</a>
     <a href="#contato" onclick="closeMenu()">Contato</a>
     <a class="btn btn-primary" data-wa data-msg="Olá! Gostaria de falar com um advogado do Rodrigues e Dantas." href="https://wa.me/5564992973416" target="_blank" rel="noopener" onclick="closeMenu()">Fale no WhatsApp</a>
@@ -407,6 +420,31 @@
   </div>
 </section>
 
+<!-- ===================== DIREITO IMOBILIÁRIO (detalhado) ===================== -->
+<section id="imobiliario" class="section imob">
+  <div class="container">
+    <div class="section-head fade">
+      <span class="eyebrow">Destaque · Direito Imobiliário</span>
+      <h2 class="title">Direito Imobiliário, do início ao fim do negócio.</h2>
+      <p class="lead">Reunimos experiência em contratos de alta complexidade e no mercado imobiliário para dar segurança a quem compra, vende, aluga, investe ou precisa regularizar um imóvel. Veja em detalhe como podemos ajudar:</p>
+    </div>
+    <div class="imob-grid">
+      <article class="imob-item fade"><h3>Compra e venda de imóveis</h3><p>Assessoria na negociação e na elaboração e revisão de contratos, com segurança jurídica do começo ao fim.</p></article>
+      <article class="imob-item fade"><h3>Due diligence imobiliária</h3><p>Análise de matrícula, certidões, ônus e dívidas antes de comprar — para você não herdar problemas.</p></article>
+      <article class="imob-item fade"><h3>Regularização de imóveis</h3><p>Regularização de documentação, averbação de construção, retificação de área e regularização fundiária.</p></article>
+      <article class="imob-item fade"><h3>Usucapião</h3><p>Reconhecimento da propriedade de quem ocupa o imóvel, pela via judicial ou extrajudicial (em cartório).</p></article>
+      <article class="imob-item fade"><h3>Distrato e atraso de obra</h3><p>Rescisão de imóvel na planta, devolução dos valores pagos e indenização por atraso na entrega.</p></article>
+      <article class="imob-item fade"><h3>Locação</h3><p>Contratos de aluguel, ações de despejo, revisão e cobrança de aluguéis — residencial e comercial.</p></article>
+      <article class="imob-item fade"><h3>Incorporação e loteamento</h3><p>Assessoria a incorporadoras, construtoras e investidores na estruturação de empreendimentos.</p></article>
+      <article class="imob-item fade"><h3>Financiamento e garantias</h3><p>Contratos de financiamento, alienação fiduciária e análise de garantias imobiliárias.</p></article>
+      <article class="imob-item fade"><h3>Imóveis em inventário</h3><p>Regularização e partilha de imóveis em heranças e dissoluções, com o menor desgaste possível.</p></article>
+    </div>
+    <div class="imob-cta fade">
+      <a class="btn btn-primary" data-wa data-msg="Olá! Gostaria de falar sobre uma questão de Direito Imobiliário." href="https://wa.me/5564992973416" target="_blank" rel="noopener">Falar sobre meu imóvel</a>
+    </div>
+  </div>
+</section>
+
 <!-- ========================= DIFERENCIAIS ========================= -->
 <section id="diferenciais" class="section dif">
   <div class="container">
@@ -506,6 +544,7 @@
       <h4>Navegação</h4>
       <a href="#sobre">O escritório</a>
       <a href="#areas">Áreas de atuação</a>
+      <a href="#imobiliario">Imobiliário</a>
       <a href="#diferenciais">Diferenciais</a>
       <a href="#equipe">Equipe</a>
       <a href="#contato">Contato</a>
